@@ -40,3 +40,51 @@ var PlayerImages = [...][]byte{
 	Pacman7_png,
 	Pacman8_png,
 }
+
+// BlinkyImages contains all blinky's images
+var BlinkyImages = [...][]byte{
+	Blinky1_png,
+	Blinky2_png,
+	Blinky3_png,
+	Blinky4_png,
+	Blinky5_png,
+	Blinky6_png,
+	Blinky7_png,
+	Blinky8_png,
+}
+
+// ClydeImages contains all clyde's images
+var ClydeImages = [...][]byte{
+	Clyde1_png,
+	Clyde2_png,
+	Clyde3_png,
+	Clyde4_png,
+	Clyde5_png,
+	Clyde6_png,
+	Clyde7_png,
+	Clyde8_png,
+}
+
+// InkyImages contains all inky's images
+var InkyImages = [...][]byte{
+	Inky1_png,
+	Inky2_png,
+	Inky3_png,
+	Inky4_png,
+	Inky5_png,
+	Inky6_png,
+	Inky7_png,
+	Inky8_png,
+}
+
+// PinkyImages contains all pinky's images
+var PinkyImages = [...][]byte{
+	Pinky1_png,
+	Pinky2_png,
+	Pinky3_png,
+	Pinky4_png,
+	Pinky5_png,
+	Pinky6_png,
+	Pinky7_png,
+	Pinky8_png,
+}
