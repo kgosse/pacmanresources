@@ -1,6 +1,6 @@
 package images
 
-// Images is an array of all the images
+// Images contains all the wall images
 var Images = [...][]byte{
 	W0_png,
 	W1_png,
