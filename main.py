@@ -12,6 +12,11 @@ def gen_bigdots():
         os.system("file2byteslice -package images -input images/BigDot{}.png -output images/BigDot{}.go -var BigDot{}_png".format(i, i, i))
         print("images/BigDot{}.go".format(i))
 
+def gen_dot():
+    os.system("file2byteslice -package images -input images/Dot.png -output images/Dot.go -var Dot_png")
+    print("images/Dot.go")
+
 if __name__ == "__main__":
     # gen_images()
-    gen_bigdots()
+    # gen_bigdots()
+    gen_dot()
