@@ -19,8 +19,20 @@ def gen_pacman():
         os.system("file2byteslice -package images -input images/pacman{}.png -output images/pacman{}.go -var Pacman{}_png".format(i, i, i))
         print("images/pacman{}.go".format(i))
 
+def gen_blinky():
+    for i in range(1, 9):
+        os.system("file2byteslice -package images -input images/blinky{}.png -output images/blinky{}.go -var Blinky{}_png".format(i, i, i))
+        print("images/blinky{}.go".format(i))
+
+def gen_clyde():
+    for i in range(1, 9):
+        os.system("file2byteslice -package images -input images/clyde{}.png -output images/clyde{}.go -var Clyde{}_png".format(i, i, i))
+        print("images/clyde{}.go".format(i))
+
 if __name__ == "__main__":
     # gen_walls()
     # gen_bigdots()
     # gen_dot()
-    gen_pacman()
+    # gen_pacman()
+    # gen_blinky()
+    gen_clyde()
