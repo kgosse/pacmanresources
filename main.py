@@ -39,6 +39,16 @@ def gen_pinky():
         os.system("file2byteslice -package images -input images/pinky{}.png -output images/pinky{}.go -var Pinky{}_png".format(i, i, i))
         print("images/pinky{}.go".format(i))
 
+def gen_vulnerable():
+    os.system("file2byteslice -package images -input images/eaten.png -output images/eaten.go -var Eaten_png")
+    print("images/eaten.go")
+
+    for i in range(1, 3):
+        os.system("file2byteslice -package images -input images/vulnerable{}.png -output images/vulnerable{}.go -var Vulnerable{}_png".format(i, i, i))
+        print("images/vulnerable{}.go".format(i))
+        os.system("file2byteslice -package images -input images/vulnerableblink{}.png -output images/vulnerableblink{}.go -var Vulnerable{}_png".format(i, i, i))
+        print("images/vulnerableblink{}.go".format(i))
+
 if __name__ == "__main__":
     # gen_walls()
     # gen_bigdots()
@@ -46,5 +56,6 @@ if __name__ == "__main__":
     # gen_pacman()
     # gen_blinky()
     # gen_clyde()
-    gen_inky()
-    gen_pinky()
+    # gen_inky()
+    # gen_pinky()
+    gen_vulnerable()
