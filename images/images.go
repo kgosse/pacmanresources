@@ -28,3 +28,15 @@ var Images = [...][]byte{
 	W23_png,
 	W24_png,
 }
+
+// PlayerImages contains all the player images
+var PlayerImages = [...][]byte{
+	Pacman1_png,
+	Pacman2_png,
+	Pacman3_png,
+	Pacman4_png,
+	Pacman5_png,
+	Pacman6_png,
+	Pacman7_png,
+	Pacman8_png,
+}
