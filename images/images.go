@@ -88,3 +88,12 @@ var PinkyImages = [...][]byte{
 	Pinky7_png,
 	Pinky8_png,
 }
+
+// VulnerabilityImages contains all the vulnerability images
+var VulnerabilityImages = [...][]byte{
+	Vulnerable1_png,
+	Vulnerable2_png,
+	Vulnerableblink1_png,
+	Vulnerableblink2_png,
+	Eaten_png,
+}

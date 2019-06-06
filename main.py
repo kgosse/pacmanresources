@@ -46,7 +46,7 @@ def gen_vulnerable():
     for i in range(1, 3):
         os.system("file2byteslice -package images -input images/vulnerable{}.png -output images/vulnerable{}.go -var Vulnerable{}_png".format(i, i, i))
         print("images/vulnerable{}.go".format(i))
-        os.system("file2byteslice -package images -input images/vulnerableblink{}.png -output images/vulnerableblink{}.go -var Vulnerable{}_png".format(i, i, i))
+        os.system("file2byteslice -package images -input images/vulnerableblink{}.png -output images/vulnerableblink{}.go -var Vulnerableblink{}_png".format(i, i, i))
         print("images/vulnerableblink{}.go".format(i))
 
 if __name__ == "__main__":
