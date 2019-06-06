@@ -29,10 +29,22 @@ def gen_clyde():
         os.system("file2byteslice -package images -input images/clyde{}.png -output images/clyde{}.go -var Clyde{}_png".format(i, i, i))
         print("images/clyde{}.go".format(i))
 
+def gen_inky():
+    for i in range(1, 9):
+        os.system("file2byteslice -package images -input images/inky{}.png -output images/inky{}.go -var Inky{}_png".format(i, i, i))
+        print("images/inky{}.go".format(i))
+
+def gen_pinky():
+    for i in range(1, 9):
+        os.system("file2byteslice -package images -input images/pinky{}.png -output images/pinky{}.go -var Pinky{}_png".format(i, i, i))
+        print("images/pinky{}.go".format(i))
+
 if __name__ == "__main__":
     # gen_walls()
     # gen_bigdots()
     # gen_dot()
     # gen_pacman()
     # gen_blinky()
-    gen_clyde()
+    # gen_clyde()
+    gen_inky()
+    gen_pinky()
