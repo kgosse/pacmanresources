@@ -97,3 +97,10 @@ var VulnerabilityImages = [...][]byte{
 	Vulnerableblink2_png,
 	Eaten_png,
 }
+
+// FruitImages contains all the fruit images
+var FruitImages = [...][]byte{
+	Fruit1_png,
+	Fruit2_png,
+	Fruit3_png,
+}

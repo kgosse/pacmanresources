@@ -49,6 +49,11 @@ def gen_vulnerable():
         os.system("file2byteslice -package images -input images/vulnerableblink{}.png -output images/vulnerableblink{}.go -var Vulnerableblink{}_png".format(i, i, i))
         print("images/vulnerableblink{}.go".format(i))
 
+def gen_fruits():
+    for i in range(1, 4):
+        os.system("file2byteslice -package images -input images/fruit{}.png -output images/fruit{}.go -var Fruit{}_png".format(i, i, i))
+        print("images/fruit{}.go".format(i))
+
 if __name__ == "__main__":
     # gen_walls()
     # gen_bigdots()
@@ -58,4 +63,5 @@ if __name__ == "__main__":
     # gen_clyde()
     # gen_inky()
     # gen_pinky()
-    gen_vulnerable()
+    # gen_vulnerable()
+    gen_fruits()
