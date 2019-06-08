@@ -104,3 +104,12 @@ var FruitImages = [...][]byte{
 	Fruit2_png,
 	Fruit3_png,
 }
+
+// PointImages contains all the point images
+var PointImages = [...][]byte{
+	Point100_png,
+	Point200_png,
+	Point400_png,
+	Point800_png,
+	Point1600_png,
+}

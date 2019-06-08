@@ -54,6 +54,22 @@ def gen_fruits():
         os.system("file2byteslice -package images -input images/fruit{}.png -output images/fruit{}.go -var Fruit{}_png".format(i, i, i))
         print("images/fruit{}.go".format(i))
 
+def gen_points():
+
+    for i in points():
+        os.system("file2byteslice -package images -input images/{}pts.png -output images/point{}.go -var Point{}_png".format(i, i, i))
+        print("images/point{}.go".format(i))
+
+def points():
+    c = 100
+    l = [c]
+    i = 1
+    while i <= 4:
+        c = c*2
+        l.append(c)
+        i += 1
+    return l
+
 if __name__ == "__main__":
     # gen_walls()
     # gen_bigdots()
@@ -64,4 +80,5 @@ if __name__ == "__main__":
     # gen_inky()
     # gen_pinky()
     # gen_vulnerable()
-    gen_fruits()
+    # gen_fruits()
+    gen_points()
