@@ -1,7 +1,7 @@
 package images
 
-// Images contains all the wall images
-var Images = [...][]byte{
+// WallImages contains all the wall images
+var WallImages = [...][]byte{
 	W0_png,
 	W1_png,
 	W2_png,
