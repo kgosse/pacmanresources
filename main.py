@@ -7,11 +7,11 @@ def gen_walls():
 
 def gen_bigdots():
     for i in range(1, 3):
-        os.system("file2byteslice -package images -input images/BigDot{}.png -output images/BigDot{}.go -var BigDot{}_png".format(i, i, i))
+        os.system("file2byteslice -package images -input images/BigDot{}.png -output images/bigdot{}.go -var BigDot{}_png".format(i, i, i))
         print("images/BigDot{}.go".format(i))
 
 def gen_dot():
-    os.system("file2byteslice -package images -input images/Dot.png -output images/Dot.go -var Dot_png")
+    os.system("file2byteslice -package images -input images/Dot.png -output images/dot.go -var Dot_png")
     print("images/Dot.go")
 
 def gen_pacman():
@@ -70,6 +70,12 @@ def points():
         i += 1
     return l
 
+def gen_particles():
+    os.system("file2byteslice -package images -input images/PacParticle.png -output images/pacparticle.go -var PacParticle_png")
+    print("images/pacparticle.go")
+    os.system("file2byteslice -package images -input images/GhostParticle.png -output images/ghostparticle.go -var GhostParticle_png")
+    print("images/ghostparticle.go")
+
 if __name__ == "__main__":
     # gen_walls()
     # gen_bigdots()
@@ -81,4 +87,5 @@ if __name__ == "__main__":
     # gen_pinky()
     # gen_vulnerable()
     # gen_fruits()
-    gen_points()
+    # gen_points()
+    gen_particles()
