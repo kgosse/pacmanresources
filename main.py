@@ -76,6 +76,12 @@ def gen_particles():
     os.system("file2byteslice -package images -input images/GhostParticle.png -output images/ghostparticle.go -var GhostParticle_png")
     print("images/ghostparticle.go")
 
+def gen_images():
+    os.system("file2byteslice -package images -input images/gameover.png -output images/gameover.go -var GameOver_png")
+    print("images/gameover.go")
+    os.system("file2byteslice -package images -input images/congratulations.png -output images/congratulations.go -var Congrats_png")
+    print("images/congratulations.go")
+
 if __name__ == "__main__":
     # gen_walls()
     # gen_bigdots()
@@ -88,4 +94,5 @@ if __name__ == "__main__":
     # gen_vulnerable()
     # gen_fruits()
     # gen_points()
-    gen_particles()
+    # gen_particles()
+    gen_images()
